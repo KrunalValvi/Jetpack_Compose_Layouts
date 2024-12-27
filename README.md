@@ -8,13 +8,27 @@ This project demonstrates multiple layouts and components using Jetpack Compose 
 A simple and modern navigation hub with buttons for each screen.
 
 ### Layouts Included:
-- **Birthday Card:** A celebratory layout with an image and styled text.
-- **Business Card:** A professional-looking business card design.
-- **Compose Article:** Displays an article-like layout with text and spacing.
-- **Compose Quadrant:** Demonstrates grid-style layouts with multiple sections.
-- **Task Manager:** A clean and intuitive task completion interface.
+- **Birthday_Card.kt:**
+  A themed birthday message with a background image.
 
-## Main Screen
+- **Business_Card.kt:**
+  A professional card with user details.
+
+- **Compose_Article.kt:**
+  Displays an article-like layout with text and spacing.
+
+- **Compose_Quadrant.kt:**
+  Demonstrates grid-style layouts with multiple sections.
+
+- **MainActivity.kt:**
+  The main entry point of the application, containing the navigation logic.
+
+- **Task_Manager.kt:**
+  A clean and intuitive task completion interface.
+
+## Screenshots
+
+### Main Screen
 **Description:** Centralized "Welcome to Jetpack Compose Layouts" message with buttons for navigation.
 
 ### Individual Layouts
