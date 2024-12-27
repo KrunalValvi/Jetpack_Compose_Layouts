@@ -26,19 +26,7 @@ A simple and modern navigation hub with buttons for each screen.
 - **Task_Manager.kt:**
   A clean and intuitive task completion interface.
 
-## Screenshots
 
-### Main Screen
-**Description:** Centralized "Welcome to Jetpack Compose Layouts" message with buttons for navigation.
-
-### Individual Layouts
-- **Birthday Card:**
-  A themed birthday message with a background image.
-
-- **Business Card:**
-  A professional card with user details.
-
-(Add screenshots for other layouts as needed.)
 
 ## How to Run
 1. Clone the repository:
