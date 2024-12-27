@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Jetpack_Compose_Layouts</string>
+    <string name="app_name">JC Layouts</string>
     <string name="happy_birthday_text">Happy Birthday Sam!</string>
     <string name="signature_text">From Emma</string>
 </resources>
