@@ -14,9 +14,7 @@ A simple and modern navigation hub with buttons for each screen.
 - **Compose Quadrant:** Demonstrates grid-style layouts with multiple sections.
 - **Task Manager:** A clean and intuitive task completion interface.
 
-## Screenshots
-
-### Main Screen
+## Main Screen
 **Description:** Centralized "Welcome to Jetpack Compose Layouts" message with buttons for navigation.
 
 ### Individual Layouts
