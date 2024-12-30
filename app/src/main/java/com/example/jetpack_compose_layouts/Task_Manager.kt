@@ -24,18 +24,15 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.jetpack_compose_layouts.ui.theme.Jetpack_Compose_LayoutsTheme
 
 class Task_Manager : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Jetpack_Compose_LayoutsTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Surface(modifier = Modifier.padding(innerPadding)) {
-                        TaskManager()
-                    }
+            Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Surface(modifier = Modifier.padding(innerPadding)) {
+                    TaskManager()
                 }
             }
         }
@@ -79,7 +76,5 @@ fun TaskManager() {
 @Preview(showBackground = true)
 @Composable
 fun TaskManagerPreview() {
-    Jetpack_Compose_LayoutsTheme {
-        TaskManager()
-    }
+
 }

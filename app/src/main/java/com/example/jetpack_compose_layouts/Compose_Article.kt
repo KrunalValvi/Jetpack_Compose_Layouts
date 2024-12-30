@@ -20,19 +20,16 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.jetpack_compose_layouts.ui.theme.Jetpack_Compose_LayoutsTheme
 
 class Compose_Article : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Jetpack_Compose_LayoutsTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Article(
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+            Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Article(
+                    modifier = Modifier.padding(innerPadding)
+                )
             }
         }
     }
@@ -100,7 +97,5 @@ fun Article(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun ArticlePreview() {
-    Jetpack_Compose_LayoutsTheme {
-        Article()
-    }
+
 }

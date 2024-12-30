@@ -17,14 +17,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.jetpack_compose_layouts.ui.theme.Jetpack_Compose_LayoutsTheme
 
 class Compose_Quadrant : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Jetpack_Compose_LayoutsTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Surface(modifier = Modifier.padding(innerPadding)) {
                         ComposeQuadrant()
@@ -33,7 +31,6 @@ class Compose_Quadrant : ComponentActivity() {
             }
         }
     }
-}
 
 @Composable
 fun Quadrant(
@@ -118,7 +115,5 @@ fun ComposeQuadrant() {
 @Preview(showBackground = true)
 @Composable
 fun PreviewComposeQuadrant() {
-    Jetpack_Compose_LayoutsTheme {
-        ComposeQuadrant()
-    }
+
 }

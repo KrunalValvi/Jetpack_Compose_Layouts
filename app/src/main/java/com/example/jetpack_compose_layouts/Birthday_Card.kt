@@ -23,14 +23,13 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.jetpack_compose_layouts.ui.theme.Jetpack_Compose_LayoutsTheme
 
 class Birthday_Card : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Jetpack_Compose_LayoutsTheme {
+
                     Surface(
                         modifier = Modifier.fillMaxSize(),
                         color = MaterialTheme.colorScheme.background
@@ -43,7 +42,7 @@ class Birthday_Card : ComponentActivity() {
                 }
             }
         }
-    }
+
 
 @Composable
 fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
@@ -90,10 +89,8 @@ fun GreetingImage(message: String, from: String) {
 @Preview(showBackground = true)
 @Composable
 fun BirthdayCardPreview() {
-    Jetpack_Compose_LayoutsTheme {
         GreetingImage(
             message = stringResource(R.string.happy_birthday_text),
             from = stringResource(R.string.signature_text)
         )
     }
-}
