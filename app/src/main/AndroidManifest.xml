@@ -29,6 +29,7 @@
         <activity android:name=".Compose_Quadrant" />
         <activity android:name=".Task_Manager" />
         <activity android:name=".Dice_Roller" />
+        <activity android:name=".Lemonade_app" />
 
     </application>
 
