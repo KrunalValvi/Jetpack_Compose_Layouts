@@ -28,6 +28,7 @@
         <activity android:name=".Compose_Article" />
         <activity android:name=".Compose_Quadrant" />
         <activity android:name=".Task_Manager" />
+        <activity android:name=".Dice_Roller" />
 
     </application>
 

@@ -40,6 +40,9 @@ class MainActivity : ComponentActivity() {
                     },
                     onTaskManagerClick = {
                         startActivity(Intent(this, Task_Manager::class.java))
+                    },
+                    onDiceRollerClick = {
+                        startActivity(Intent(this, Dice_Roller::class.java))
                     }
                 )
             }
@@ -53,7 +56,8 @@ fun MainScreen(
     onBusinessClick: () -> Unit,
     onComposeArticleClick: () -> Unit,
     onComposeQuadrantClick: () -> Unit,
-    onTaskManagerClick: () -> Unit
+    onTaskManagerClick: () -> Unit,
+    onDiceRollerClick: () -> Unit
 ) {
     Column(
         modifier = Modifier
@@ -63,7 +67,7 @@ fun MainScreen(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Welcome to Jetpack Compose UI Layouts",
+            text = "Jetpack Compose Layouts",
             style = MaterialTheme.typography.headlineLarge.copy(
                 fontFamily = androidx.compose.ui.text.font.FontFamily.Serif,
                 fontWeight = androidx.compose.ui.text.font.FontWeight.Bold
@@ -71,7 +75,7 @@ fun MainScreen(
             textAlign = TextAlign.Center,
             modifier = Modifier
                 .padding(horizontal = 16.dp)
-                .padding(bottom = 70.dp) // Add spacing below the header
+                .padding(bottom = 30.dp) // Add spacing below the header
         )
 
         ActionCard(title = "Birthday Card", onClick = onBirthdayClick)
@@ -79,6 +83,22 @@ fun MainScreen(
         ActionCard(title = "Compose Article", onClick = onComposeArticleClick)
         ActionCard(title = "Compose Quadrant", onClick = onComposeQuadrantClick)
         ActionCard(title = "Task Manager", onClick = onTaskManagerClick)
+
+        Text(
+            text = "Interactive Layouts",
+            style = MaterialTheme.typography.headlineLarge.copy(
+                fontFamily = androidx.compose.ui.text.font.FontFamily.Serif,
+                fontWeight = androidx.compose.ui.text.font.FontWeight.Bold
+            ),
+            textAlign = TextAlign.Center,
+            modifier = Modifier
+                .padding(horizontal = 16.dp)
+                .padding(top = 30.dp)
+                .padding(bottom = 20.dp)
+        )
+
+        ActionCard(title = "Dice Roller", onClick = onDiceRollerClick)
+
     }
 }
 
@@ -115,7 +135,8 @@ fun MainScreenPreview() {
             onBusinessClick = {},
             onComposeArticleClick = {},
             onComposeQuadrantClick = {},
-            onTaskManagerClick = {}
+            onTaskManagerClick = {},
+            onDiceRollerClick = {}
         )
     }
 }
