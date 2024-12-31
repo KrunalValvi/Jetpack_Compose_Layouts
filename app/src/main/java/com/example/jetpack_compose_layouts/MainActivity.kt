@@ -50,6 +50,9 @@ class MainActivity : ComponentActivity() {
                     },
                     onTipCalculatorClick = {
                         startActivity(Intent(this, TipTimeTheme::class.java))
+                    },
+                    onArtSpaceClick = {
+                        startActivity(Intent(this, Art_Space::class.java))
                     }
                 )
             }
@@ -67,7 +70,8 @@ fun MainScreen(
     onTaskManagerClick: () -> Unit,
     onDiceRollerClick: () -> Unit,
     onLemonadeClick: () -> Unit,
-    onTipCalculatorClick: () -> Unit
+    onTipCalculatorClick: () -> Unit,
+    onArtSpaceClick: () -> Unit
 ) {
     Column(
         modifier = Modifier
@@ -111,6 +115,7 @@ fun MainScreen(
         ActionCard(title = "Dice Roller", onClick = onDiceRollerClick)
         ActionCard(title = "Make Lemonade ", onClick = onLemonadeClick)
         ActionCard(title = "Tip Calculator ", onClick = onTipCalculatorClick)
+        ActionCard(title = "Art Space ", onClick = onArtSpaceClick)
     }
 }
 
@@ -151,7 +156,8 @@ fun MainScreenPreview() {
             onTaskManagerClick = {},
             onDiceRollerClick = {},
             onLemonadeClick = {},
-            onTipCalculatorClick = {}
+            onTipCalculatorClick = {},
+            onArtSpaceClick = {}
         )
     }
 }
