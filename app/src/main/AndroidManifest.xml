@@ -30,6 +30,7 @@
         <activity android:name=".Task_Manager" />
         <activity android:name=".Dice_Roller" />
         <activity android:name=".Lemonade_app" />
+        <activity android:name=".TipTimeTheme" />
 
     </application>
 
