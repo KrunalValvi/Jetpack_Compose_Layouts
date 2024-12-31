@@ -1,4 +1,4 @@
-package com.example.jetpack_compose_layouts
+    package com.example.jetpack_compose_layouts
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
