@@ -32,6 +32,7 @@
         <activity android:name=".TipTimeTheme" />
         <activity android:name=".Art_Space" />
         <activity android:name=".Scrollable_List" />
+        <activity android:name=".GridLayout" />
 
     </application>
 

@@ -50,7 +50,7 @@ fun AffirmationsApp() {
     ) {
         AffirmationList(
             affirmationList = Datasource().loadAffirmations(),
-        )
+            )
     }
 }
 
@@ -83,7 +83,7 @@ fun AffirmationList(affirmationList: List<Affirmation>, modifier: Modifier = Mod
     ) {
         items(
             items = affirmationList,
-            key = { it.stringResourceId } // Unique key for each item
+            key = { it.stringResourceId }
         ) { affirmation ->
             AffirmationCard(affirmation = affirmation)
         }

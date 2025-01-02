@@ -56,6 +56,9 @@ class MainActivity : ComponentActivity() {
                     },
                     onScrollableList = {
                         startActivity(Intent(this, Scrollable_List::class.java))
+                    },
+                    onGridLayoutClick = {
+                        startActivity(Intent(this, GridLayout::class.java))
                     }
                 )
             }
@@ -75,7 +78,8 @@ fun MainScreen(
     onLemonadeClick: () -> Unit,
     onTipCalculatorClick: () -> Unit,
     onArtSpaceClick: () -> Unit,
-    onScrollableList: () -> Unit
+    onScrollableList: () -> Unit,
+    onGridLayoutClick: () -> Unit
 ) {
     Column(
         modifier = Modifier
@@ -121,6 +125,7 @@ fun MainScreen(
         ActionCard(title = "Tip Calculator ", onClick = onTipCalculatorClick)
         ActionCard(title = "Art Space ", onClick = onArtSpaceClick)
         ActionCard(title = "Scrollable List ", onClick = onScrollableList)
+        ActionCard(title = "Gride Layout ", onClick = onGridLayoutClick)
     }
 }
 
@@ -164,6 +169,7 @@ fun MainScreenPreview() {
             onTipCalculatorClick = {},
             onArtSpaceClick = {},
             onScrollableList = {},
+            onGridLayoutClick = {},
         )
     }
 }
