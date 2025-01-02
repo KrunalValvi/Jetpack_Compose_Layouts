@@ -53,6 +53,9 @@ class MainActivity : ComponentActivity() {
                     },
                     onArtSpaceClick = {
                         startActivity(Intent(this, Art_Space::class.java))
+                    },
+                    onScrollableList = {
+                        startActivity(Intent(this, Scrollable_List::class.java))
                     }
                 )
             }
@@ -71,7 +74,8 @@ fun MainScreen(
     onDiceRollerClick: () -> Unit,
     onLemonadeClick: () -> Unit,
     onTipCalculatorClick: () -> Unit,
-    onArtSpaceClick: () -> Unit
+    onArtSpaceClick: () -> Unit,
+    onScrollableList: () -> Unit
 ) {
     Column(
         modifier = Modifier
@@ -116,6 +120,7 @@ fun MainScreen(
         ActionCard(title = "Make Lemonade ", onClick = onLemonadeClick)
         ActionCard(title = "Tip Calculator ", onClick = onTipCalculatorClick)
         ActionCard(title = "Art Space ", onClick = onArtSpaceClick)
+        ActionCard(title = "Scrollable List ", onClick = onScrollableList)
     }
 }
 
@@ -157,7 +162,8 @@ fun MainScreenPreview() {
             onDiceRollerClick = {},
             onLemonadeClick = {},
             onTipCalculatorClick = {},
-            onArtSpaceClick = {}
+            onArtSpaceClick = {},
+            onScrollableList = {},
         )
     }
 }

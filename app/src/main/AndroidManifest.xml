@@ -31,6 +31,7 @@
         <activity android:name=".Lemonade_app" />
         <activity android:name=".TipTimeTheme" />
         <activity android:name=".Art_Space" />
+        <activity android:name=".Scrollable_List" />
 
     </application>
 

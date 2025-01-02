@@ -36,7 +36,7 @@ class Birthday_Card : ComponentActivity() {
                     ) {
                         GreetingImage(
                             message = getString(R.string.happy_birthday_text),
-                            from = "From Emma"
+                            from = "Form Someone"
                         )
                     }
                 }

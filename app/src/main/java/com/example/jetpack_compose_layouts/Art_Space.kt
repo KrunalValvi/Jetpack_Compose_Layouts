@@ -25,7 +25,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
@@ -43,15 +42,13 @@ class Art_Space : ComponentActivity() {
 
 @Composable
 fun ArtSpace() {
-    // List of image resources
     val imageList = listOf(
-        R.drawable.image1,
-        R.drawable.image2,
-        R.drawable.image3,
-        R.drawable.image4
+        R.drawable.art_image1,
+        R.drawable.art_image2,
+        R.drawable.art_image3,
+        R.drawable.art_image4
     )
 
-    // List of titles corresponding to images
     val titleList = listOf(
         "Clock Tower",
         "Street",
@@ -59,7 +56,6 @@ fun ArtSpace() {
         "Seashore"
     )
 
-    // List of descriptions corresponding to images
     val descriptionList = listOf(
         "London, United Kingdom",
         "Paris, France",
@@ -67,7 +63,6 @@ fun ArtSpace() {
         "United Kingdom"
     )
 
-    // State to keep track of the current image index
     var currentImageIndex by remember { mutableStateOf(0) }
 
     Surface(
@@ -79,7 +74,6 @@ fun ArtSpace() {
             verticalArrangement = Arrangement.SpaceEvenly,
             modifier = Modifier.padding(16.dp)
         ) {
-            // Image Section
             Card(
                 shape = RoundedCornerShape(8.dp),
                 modifier = Modifier
@@ -96,7 +90,6 @@ fun ArtSpace() {
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Title Section
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier
@@ -118,14 +111,12 @@ fun ArtSpace() {
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Buttons Section
             Row(
                 horizontalArrangement = Arrangement.SpaceEvenly,
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Button(
                     onClick = {
-                        // Show the previous image and text (loop back to the last if at the first)
                         currentImageIndex = if (currentImageIndex > 0) {
                             currentImageIndex - 1
                         } else {
@@ -137,7 +128,6 @@ fun ArtSpace() {
                 }
                 Button(
                     onClick = {
-                        // Show the next image and text (loop back to the first if at the last)
                         currentImageIndex = (currentImageIndex + 1) % imageList.size
                     }
                 ) {

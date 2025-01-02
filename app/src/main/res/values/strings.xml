@@ -20,4 +20,15 @@
     <string name="round_up_tip">Round up tip?</string>
     <string name="tip_amount">Tip Amount: %s</string>
 
+    <string name="affirmation1">Green valleys cradled by cliffs</string>
+    <string name="affirmation2">Snow-capped mountains standing tall</string>
+    <string name="affirmation3">Morning sunlight on the mountains</string>
+    <string name="affirmation4">Twilight on the mountain peaks</string>
+    <string name="affirmation5">The sea and sky, endless and serene</string>
+    <string name="affirmation6">Mountains that tell stories of strength</string>
+    <string name="affirmation7">Rugged peaks reaching for the sky</string>
+    <string name="affirmation8">Where earth meets the clouds</string>
+    <string name="affirmation9">Whispers of the wind among the giants</string>
+    <string name="affirmation10">A trail through the wild</string>
+
 </resources>
