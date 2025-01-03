@@ -31,7 +31,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.jetpack_compose_layouts.data.DataSource
+import com.example.jetpack_compose_layouts.data.TopicDataSource
 import com.example.jetpack_compose_layouts.model.Topic
 
 class GridLayout : ComponentActivity() {
@@ -66,7 +66,7 @@ fun TopicGrid(modifier: Modifier = Modifier) {
         horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_small)),
         modifier = modifier
     ) {
-        items(DataSource.topics) { topic ->
+        items(TopicDataSource.topics) { topic ->
             TopicCard(topic)
         }
     }
