@@ -2,7 +2,6 @@ package com.example.jetpack_compose_layouts.data
 
 import com.example.jetpack_compose_layouts.R
 import com.example.jetpack_compose_layouts.model.Affirmation
-import com.example.jetpack_compose_layouts.model.Topic
 
 class Datasource {
     fun loadAffirmations(): List<Affirmation> {
