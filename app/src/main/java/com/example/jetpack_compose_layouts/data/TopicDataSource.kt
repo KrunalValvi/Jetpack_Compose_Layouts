@@ -1,5 +1,3 @@
-// File: app/src/main/java/com/example/jetpack_compose_layouts/data/TopicDataSource.kt
-
 package com.example.jetpack_compose_layouts.data
 
 import com.example.jetpack_compose_layouts.R

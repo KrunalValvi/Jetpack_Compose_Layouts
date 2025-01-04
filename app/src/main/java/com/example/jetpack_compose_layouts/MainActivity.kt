@@ -59,6 +59,9 @@ class MainActivity : ComponentActivity() {
                     },
                     onGridLayoutClick = {
                         startActivity(Intent(this, GridLayout::class.java))
+                    },
+                    onSuperheroClick = {
+                        startActivity(Intent(this, Superheroes::class.java))
                     }
                 )
             }
@@ -79,7 +82,8 @@ fun MainScreen(
     onTipCalculatorClick: () -> Unit,
     onArtSpaceClick: () -> Unit,
     onScrollableList: () -> Unit,
-    onGridLayoutClick: () -> Unit
+    onGridLayoutClick: () -> Unit,
+    onSuperheroClick: () -> Unit
 ) {
     Column(
         modifier = Modifier
@@ -126,6 +130,7 @@ fun MainScreen(
         ActionCard(title = "Art Space ", onClick = onArtSpaceClick)
         ActionCard(title = "Scrollable List ", onClick = onScrollableList)
         ActionCard(title = "Gride Layout ", onClick = onGridLayoutClick)
+        ActionCard(title = "Super hero ", onClick = onSuperheroClick)
     }
 }
 
@@ -170,6 +175,7 @@ fun MainScreenPreview() {
             onArtSpaceClick = {},
             onScrollableList = {},
             onGridLayoutClick = {},
+            onSuperheroClick = {},
         )
     }
 }
