@@ -33,6 +33,7 @@
         <activity android:name=".Art_Space" />
         <activity android:name=".Scrollable_List" />
         <activity android:name=".GridLayout" />
+        <activity android:name=".Days_App" />
 
     </application>
 
